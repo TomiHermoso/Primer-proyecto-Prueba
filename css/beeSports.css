@@ -1,0 +1,435 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: azure;
+}
+
+p, a{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: azure;
+  text-decoration: none;
+}
+
+body{
+    background-color: #333;
+}
+
+
+/** PAG ONE */
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ccc solid 1px;
+}
+
+.head img {
+    height: auto;
+    width: 11vw;
+    margin: 10px 10px;
+}
+
+.head a{
+    padding-right: 1.5vw;
+}
+
+.nav-list{
+    width: 40%;
+}
+
+.banner {
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.banner p{
+    color: #fff;
+    font-size: 22px;
+    padding: 0px 150px;
+    text-align: center;
+}
+
+.content-pag{
+    background-color: #333;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    margin: 30px;
+}
+
+.info img{
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.info p{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
+    border-top: #ccc solid 1px;
+}
+
+footer img{
+    width: 20%;
+}
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes img{
+    width: 20px;
+    margin: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/** END PAG ONE */
+
+
+
+/** Start Pag Two */
+
+
+
+.banner2 {
+    background-color: #333;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.banner2 p{
+    color: #fff;
+    font-size: 22px;
+    padding: 0px 150px;
+    text-align: center;
+}
+
+.content-pag2{
+    background-color: #333;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.info2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 0px 30px;
+}
+
+.info2 img{
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info2 p{
+    text-align: start;
+    width: 40%;
+    margin: 0px 20px;
+}
+
+
+
+/** End Pag Two */
+
+/** Start Pag Three */
+
+.banner3 {
+    background-color: #333;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.banner3 h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 0px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content-pag3 {
+    background-color: #333;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.info3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10%;
+}
+
+.info3 img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info3 p{
+    text-align: start;
+    width: 40%;
+    margin: 0px 20px;
+}
+
+
+/** End Pag Three */
+
+/** Start Pag four */
+
+
+
+.contacto {
+    width: 35%;
+}
+
+.contacto-info {
+    justify-content: space-between;
+    display: flex;
+}
+
+.datos {
+    height: 500px;
+    vertical-align: middle;
+    align-content: center;
+    padding-left: 2%;
+}
+
+.datos-empresa h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.datos-empresa p {
+    line-height: 25px;
+}
+
+.datos-redes img {
+    width: 30px;
+    margin: 10px;
+}
+
+.contacto {
+    height: 500px;
+    vertical-align: middle;
+    align-content: center;
+    padding-left: 2%;
+}
+
+.nombre-apellido {
+    width: 100%;
+    display: flex;
+}
+
+.nombre {
+    padding: 0px 10px;
+}
+
+
+.nombre input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid #676666;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.apellido {
+    padding-left: 10px;
+}
+
+.apellido input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid #676666;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.mail {
+    padding: 10px 10px;
+}
+.mail input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid #676666;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.mensaje {
+    padding: 0px 10px;
+}
+
+.mensaje textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid #676666;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.mensaje {
+    width: 100%;   
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.boton {
+    padding: 10px 10px;
+    margin-top: 40px;
+}
+
+.boton input {
+    padding: 5px;
+    border-radius: 8px;
+    width: 80px;
+}
+
+
+/** End Pag four */
+
+/** Start Pag five */
+
+
+.historia-titulo {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    line-height: 20px;
+}
+
+.historia-subtitulo {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    padding: 0px 250px;
+    margin-bottom: 20px;
+}
+
+.historia-parte-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-parte-1 img {
+    border: solid 2px #434141;
+}
+
+.historia-parte-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-parte-2 p{
+    padding: 0 30px;
+}
+
+.historia-parte-2 img {
+    border: solid 2px #434141;
+    margin: 20px;
+}
+
+.historia-parte-3 {
+    display: flex;
+     margin-bottom: 30px;
+}
+
+.parte-3-contenido {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.parte-3-contenido img {
+    border: solid 2px #434141;
+}
+
+
+/** End Pag five */
