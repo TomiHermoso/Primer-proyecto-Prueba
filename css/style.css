@@ -1,18 +1,18 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: azure;
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: azure;
 }
 
-p, a{
-    font-family: "Quicksand", sans-serif;
+p, a {
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -20,416 +20,343 @@ p, a{
   text-decoration: none;
 }
 
-body{
-    background-color: #333;
+body {
+  background-color: #333;
 }
 
-
-/** PAG ONE */
-
-
-.head{
-    display: flex;
-    flex-direction: row;
-    background-color: #333;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #ccc solid 1px;
+/** Header */
+.head {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #ccc solid 1px;
+}
+.head a {
+  padding-right: 1.5vw;
+}
+.head a img {
+  height: auto;
+  width: 11vw;
+  margin: 10px 10px;
+}
+.head .nav-list {
+  width: 40%;
 }
 
-.head img {
-    height: auto;
-    width: 11vw;
-    margin: 10px 10px;
-}
-
-.head a{
-    padding-right: 1.5vw;
-}
-
-.nav-list{
-    width: 40%;
-}
-
+/** End Header*/
+/** Start Pag One */
 .banner {
-    background-image: url(../img/banner-img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 450px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  background-image: url(../img/banner-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 450px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner p {
+  color: azure;
+  font-size: 22px;
+  padding: 0px 150px;
+  text-align: center;
 }
 
-
-
-.banner p{
-    color: #fff;
-    font-size: 22px;
-    padding: 0px 150px;
-    text-align: center;
+.content-pag {
+  background-color: #333;
+  display: flex;
+  height: 450px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content-pag .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  margin: 30px;
+}
+.content-pag .info img {
+  width: 5vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.content-pag .info p {
+  text-align: center;
 }
 
-.content-pag{
-    background-color: #333;
-    display: flex;
-    height: 450px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
+  border-top: #ccc solid 1px;
+}
+footer img {
+  width: 20%;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+}
+footer .redes img {
+  width: 20px;
+  margin: 12px;
+  margin-bottom: 20px;
 }
 
-.info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-    margin: 30px;
-}
-
-.info img{
-    width: 5vw;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.info p{
-    text-align: center;
-}
-
-footer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    height: 20%;
-    background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
-    border-top: #ccc solid 1px;
-}
-
-footer img{
-    width: 20%;
-}
-
-
-.redes {
-    display: flex;
-    justify-content: center;
-}
-
-.redes img{
-    width: 20px;
-    margin: 12px;
-    margin-bottom: 20px;
-}
-
-
-
-
-/** END PAG ONE */
-
-
-
+/** End Pag One */
 /** Start Pag Two */
-
-
-
 .banner2 {
-    background-color: #333;
-    display: flex;
-    height: 250px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  background-color: #333;
+  display: flex;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner2 p {
+  color: azure;
+  font-size: 22px;
+  padding: 0px 150px;
+  text-align: center;
 }
 
-
-
-.banner2 p{
-    color: #fff;
-    font-size: 22px;
-    padding: 0px 150px;
-    text-align: center;
+.content-pag2 {
+  background-color: #333;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
 }
-
-.content-pag2{
-    background-color: #333;
-    display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
+.content-pag2 .info2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0px 30px;
 }
-
-.info2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    margin: 0px 30px;
+.content-pag2 .info2 img {
+  width: 35vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
 }
-
-.info2 img{
-    width: 35vw;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 10px;
+.content-pag2 .info2 p {
+  text-align: start;
+  width: 40%;
+  margin: 0px 20px;
 }
-
-.info2 p{
-    text-align: start;
-    width: 40%;
-    margin: 0px 20px;
+.content-pag2 .infoReverse p {
+  order: 0;
 }
-
-
+.content-pag2 .infoReverse img {
+  order: 1;
+}
 
 /** End Pag Two */
-
 /** Start Pag Three */
-
 .banner3 {
-    background-color: #333;
-    display: flex;
-    height: 150px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  background-color: #333;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner3 h1 {
+  color: azure;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 0px 15px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
-
-
-.banner3 h1{
-    color: #fff;
-    font-size: 60px;
-    font-weight: 600;
-    padding: 0px 15px;
-    text-align: center;
-    letter-spacing: 2px;
+.sectionTable .content-pag3 {
+  background-color: #333;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-
-.content-pag3 {
-    background-color: #333;
-    display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px;
-    flex-wrap: wrap;
-    gap: 50px;
+.sectionTable .content-pag3 .info3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10%;
 }
-
-.info3 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 10%;
+.sectionTable .content-pag3 .info3 img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
 }
-
-.info3 img{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 10px;
+.sectionTable .content-pag3 .info3 p {
+  text-align: start;
+  width: 40%;
+  margin: 0px 20px;
 }
-
-.info3 p{
-    text-align: start;
-    width: 40%;
-    margin: 0px 20px;
-}
-
 
 /** End Pag Three */
-
 /** Start Pag four */
-
-
-
-.contacto {
-    width: 35%;
+main .contacto-info {
+  justify-content: space-between;
+  display: flex;
 }
-
-.contacto-info {
-    justify-content: space-between;
-    display: flex;
+main .contacto-info .datos {
+  height: 500px;
+  vertical-align: middle;
+  align-content: center;
+  padding-left: 2%;
 }
-
-.datos {
-    height: 500px;
-    vertical-align: middle;
-    align-content: center;
-    padding-left: 2%;
+main .contacto-info .datos .datos-empresa h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
 }
-
-.datos-empresa h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
+main .contacto-info .datos .datos-empresa p {
+  line-height: 25px;
 }
-
-.datos-empresa p {
-    line-height: 25px;
+main .contacto-info .datos .datos-redes img {
+  width: 30px;
+  margin: 10px;
 }
-
-.datos-redes img {
-    width: 30px;
-    margin: 10px;
+main .contacto-info .contacto {
+  width: 35%;
+  height: 500px;
+  vertical-align: middle;
+  align-content: center;
+  padding-left: 2%;
 }
-
-.contacto {
-    height: 500px;
-    vertical-align: middle;
-    align-content: center;
-    padding-left: 2%;
+main .contacto-info .contacto .nombre-apellido {
+  width: 100%;
+  display: flex;
 }
-
-.nombre-apellido {
-    width: 100%;
-    display: flex;
+main .contacto-info .contacto .nombre-apellido .nombre {
+  padding: 0px 10px;
 }
-
-.nombre {
-    padding: 0px 10px;
+main .contacto-info .contacto .nombre-apellido .nombre input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px solid #676666;
+  padding: 10px;
+  margin-top: 5px;
 }
-
-
-.nombre input {
-    width: 100%;
-    border-radius: 10px;
-    border: 1.5px solid #676666;
-    padding: 10px;
-    margin-top: 5px;
+main .contacto-info .contacto .nombre-apellido .apellido {
+  padding-left: 10px;
 }
-
-.apellido {
-    padding-left: 10px;
+main .contacto-info .contacto .nombre-apellido .apellido input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px solid #676666;
+  padding: 10px;
+  margin-top: 5px;
 }
-
-.apellido input {
-    width: 100%;
-    border-radius: 10px;
-    border: 1.5px solid #676666;
-    padding: 10px;
-    margin-top: 5px;
+main .contacto-info .contacto .mail {
+  padding: 10px 10px;
 }
-
-.mail {
-    padding: 10px 10px;
+main .contacto-info .contacto .mail input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px solid #676666;
+  padding: 10px;
+  margin-top: 5px;
 }
-.mail input{
-    width: 100%;
-    border-radius: 10px;
-    border: 1.5px solid #676666;
-    padding: 10px;
-    margin-top: 5px;
+main .contacto-info .contacto .mensaje {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
-
-.mensaje {
-    padding: 0px 10px;
+main .contacto-info .contacto .mensaje textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px solid #676666;
+  padding: 10px;
+  margin-top: 5px;
 }
-
-.mensaje textarea {
-    width: 100%;
-    border-radius: 10px;
-    border: 1.5px solid #676666;
-    padding: 5px;
-    margin-top: 5px;
+main .contacto-info .contacto .boton {
+  padding: 10px 10px;
+  margin-top: 40px;
 }
-
-.mensaje {
-    width: 100%;   
-    height: 200px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
+main .contacto-info .contacto .boton input {
+  padding: 5px;
+  border-radius: 8px;
+  width: 80px;
 }
-
-.boton {
-    padding: 10px 10px;
-    margin-top: 40px;
-}
-
-.boton input {
-    padding: 5px;
-    border-radius: 8px;
-    width: 80px;
-}
-
 
 /** End Pag four */
-
 /** Start Pag five */
-
-
-.historia-titulo {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-    line-height: 20px;
+header .historia-titulo {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  line-height: 20px;
+}
+header .historia-subtitulo {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 20px;
+  padding: 0px 250px;
+  margin-bottom: 20px;
 }
 
-.historia-subtitulo {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 20px;
-    padding: 0px 250px;
-    margin-bottom: 20px;
+main .historia-parte-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.historia-parte-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main .historia-parte-1 img {
+  border: solid 2px #434141;
 }
-
-.historia-parte-1 img {
-    border: solid 2px #434141;
+main .historia-parte-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.historia-parte-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main .historia-parte-2 p {
+  padding: 0 30px;
 }
-
-.historia-parte-2 p{
-    padding: 0 30px;
+main .historia-parte-2 img {
+  border: solid 2px #434141;
+  margin: 20px;
 }
-
-.historia-parte-2 img {
-    border: solid 2px #434141;
-    margin: 20px;
+main .historia-parte-3 {
+  display: flex;
+  margin-bottom: 30px;
 }
-
-.historia-parte-3 {
-    display: flex;
-     margin-bottom: 30px;
+main .historia-parte-3 .parte-3-contenido {
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
 }
-
-.parte-3-contenido {
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-
+main .historia-parte-3 .parte-3-contenido img {
+  border: solid 2px #434141;
 }
-
-.parte-3-contenido img {
-    border: solid 2px #434141;
-}
-
 
 /** End Pag five */
+
+/*# sourceMappingURL=style.css.map */

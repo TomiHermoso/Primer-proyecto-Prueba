@@ -1,0 +1,391 @@
+$bgColor: #333;
+$fontColor: azure;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $fontColor;
+}
+
+p, a{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $fontColor;
+  text-decoration: none;
+}
+
+body{
+    background-color: $bgColor;
+}
+
+
+/** Header */
+
+.head{
+    display: flex;
+    flex-direction: row;
+    background-color: $bgColor;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ccc solid 1px;
+    a{
+        padding-right: 1.5vw;
+        img{
+            height: auto;
+            width: 11vw;
+            margin: 10px 10px;
+        }
+    }
+    .nav-list{
+        width: 40%;
+    }
+}
+
+/** End Header*/
+
+/** Start Pag One */
+
+.banner{
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: $fontColor;
+        font-size: 22px;
+        padding: 0px 150px;
+        text-align: center;
+    }
+}
+
+.content-pag{
+    background-color: $bgColor;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 25%;
+        margin: 30px;
+        img{
+            width: 5vw;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
+    border-top: #ccc solid 1px;
+    img{
+        width: 20%;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 20px;
+            margin: 12px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/** End Pag One */
+
+/** Start Pag Two */
+
+.banner2{
+    background-color: $bgColor;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: $fontColor;
+        font-size: 22px;
+        padding: 0px 150px;
+        text-align: center;
+    }
+}
+
+.content-pag2{
+    background-color: $bgColor;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    .info2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: 0px 30px;
+        img{
+            width: 35vw;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        p{
+            text-align: start;
+            width: 40%;
+            margin: 0px 20px;
+        }
+    }
+    .infoReverse{
+        p{
+            order: 0;
+        }
+        img{
+            order: 1;
+        }
+    }
+}
+
+/** End Pag Two */
+
+/** Start Pag Three */
+
+.banner3{
+    background-color: $bgColor;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $fontColor;
+        font-size: 60px;
+        font-weight: 600;
+        padding: 0px 15px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
+
+.sectionTable{
+    .content-pag3{
+        background-color: $bgColor;
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 50px;
+        .info3{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 10%;
+            img{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            p{
+                text-align: start;
+                width: 40%;
+                margin: 0px 20px;  
+            }
+        }
+    }
+}
+
+/** End Pag Three */
+
+/** Start Pag four */
+
+main{
+    .contacto-info{
+        justify-content: space-between;
+        display: flex;
+        .datos{
+            height: 500px;
+            vertical-align: middle;
+            align-content: center;
+            padding-left: 2%;
+            .datos-empresa{
+                h1{
+                    font-size: 40px;
+                    letter-spacing: 1px;
+                }
+                p{
+                    line-height: 25px;
+                }
+            }
+            .datos-redes{
+                img{
+                    width: 30px;
+                    margin: 10px;
+                }
+            }
+        }
+        .contacto{
+            width: 35%;
+            height: 500px;
+            vertical-align: middle;
+            align-content: center;
+            padding-left: 2%;
+            .nombre-apellido{
+                width: 100%;
+                display: flex;
+                .nombre{
+                    padding: 0px 10px;
+                    input{
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1.5px solid #676666;
+                        padding: 10px;
+                        margin-top: 5px;
+                    }
+                }
+                .apellido{
+                    padding-left: 10px;
+                    input{
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1.5px solid #676666;
+                        padding: 10px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .mail{
+                padding: 10px 10px;
+                input{
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1.5px solid #676666;
+                    padding: 10px;
+                    margin-top: 5px;
+                }
+            }
+            .mensaje{
+                width: 100%;   
+                height: 200px;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+                textarea {
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1.5px solid #676666;
+                    padding: 10px;
+                    margin-top: 5px; 
+                }
+            }
+            .boton{
+                padding: 10px 10px;
+                margin-top: 40px;
+                input{
+                    padding: 5px;
+                    border-radius: 8px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+/** End Pag four */
+
+/** Start Pag five */
+
+
+header{
+    .historia-titulo{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+        line-height: 20px;
+    }
+    .historia-subtitulo{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 20px;
+        padding: 0px 250px;
+        margin-bottom: 20px;
+
+    }
+}
+
+main{
+    .historia-parte-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border: solid 2px #434141;
+        }
+    }
+    .historia-parte-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            padding: 0 30px;
+        }
+        img{
+            border: solid 2px #434141;
+            margin: 20px;
+        }
+    }
+    .historia-parte-3{
+        display: flex;
+        margin-bottom: 30px;
+        .parte-3-contenido{
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            img{
+                border: solid 2px #434141;
+            }
+        }
+    }
+}
+
+/** End Pag five */
