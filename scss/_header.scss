@@ -1,0 +1,57 @@
+/** Header */
+
+.head{
+    display: flex;
+    position: sticky !important;
+    top: 28px;
+    flex-direction: row;
+    background-color: #434141;
+    margin: 30px;
+    border-radius: 15px;
+    padding: 0px !important;
+    z-index: 10;
+    button{
+        border: #ccc 2px solid;
+        width: auto;
+    }
+    span{
+        background-image: url(../img/barra-de-menus.png) !important;
+        
+        img{
+            
+        }
+    }
+    a{
+        color: $fontColor;
+        img{
+            height: auto;
+            width: 10vw;
+            margin: 10px;
+        }
+    }
+    .nav-list{
+        width: auto;
+        .list{
+            display: flex;
+            width: auto;
+            li{
+                list-style-type: none;
+                padding-right: 1rem;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: color, transform 0.3s;
+                    &:hover{
+                        transform: scale(1.1);
+                        color :#f7e440
+                    }
+                    &.active{
+                        color: #f7e440;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** End Header*/

@@ -1,0 +1,97 @@
+@media screen and (max-width:768px){
+    .head{
+        button{
+        }
+        span{
+            img{
+                
+            }
+        }
+        a{
+            width: 20%;
+            img{
+                width: 100%;
+                margin: 10px 0px;
+            }
+        }
+        .nav-list{
+            .list{
+                li{
+                    list-style-type: none;
+                    padding-left: 1.8rem;
+                }
+            }
+        }
+    }
+    
+    /** End Header*/
+
+    /** Start Pag four */
+
+main{
+    .contacto-info{
+
+        .datos{
+            align-content: flex-start;
+            padding-top: 25px;
+            color: $fontColor;
+            .datos-empresa{
+                h1{
+                    font-size: 40px;
+                    letter-spacing: 1px;
+                }
+                p{
+
+                }
+            }
+            .datos-redes{
+                img{
+                    width: 30px;
+                    margin: 10px;
+                }
+            }
+        }
+        .contacto{
+            width: 50%;
+            height: 500px;
+            vertical-align: middle;
+            align-content: center;
+            padding-left: 2%;
+            .nombre-apellido{
+
+                .nombre{
+
+                    input{
+
+                    }
+                }
+                .apellido{
+                    padding-right: 10px;
+                    input{
+
+                    }
+                }
+            }
+            .mail{
+                input{
+
+                }
+            }
+            .mensaje{
+                height: 150px;
+                textarea {
+
+                }
+            }
+            .boton{
+
+                input{
+
+                }
+            }
+        }
+    }
+}
+
+/** End Pag four */
+}

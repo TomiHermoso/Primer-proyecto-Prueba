@@ -1,0 +1,56 @@
+/** Start Pag Two */
+
+.banner2{
+    background-color: $bgColor;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: $fontColor;
+        font-size: 22px;
+        padding: 0px 150px;
+        text-align: center;
+    }
+}
+
+.content-pag2{
+    background-color: $bgColor;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    .info2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: 0px 30px;
+        img{
+            width: 35vw;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        p{
+            text-align: start;
+            width: 40%;
+            margin: 0px 20px;
+        }
+    }
+    .infoReverse{
+        p{
+            order: 0;
+        }
+        img{
+            order: 1;
+        }
+    }
+}
+
+/** End Pag Two */

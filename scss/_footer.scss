@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
+    border-top: #ccc solid 1px;
+    img{
+        width: 20%;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 20px;
+            margin: 12px;
+            margin-bottom: 20px;
+        }
+    }
+}

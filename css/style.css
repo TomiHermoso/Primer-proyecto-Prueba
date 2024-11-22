@@ -21,28 +21,58 @@ p, a {
 }
 
 body {
-  background-color: #333;
+  background-color: #333 !important;
 }
 
 /** Header */
 .head {
   display: flex;
+  position: sticky !important;
+  top: 28px;
   flex-direction: row;
-  background-color: #333;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: #ccc solid 1px;
+  background-color: #434141;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 0px !important;
+  z-index: 10;
+}
+.head button {
+  border: #ccc 2px solid;
+  width: auto;
+}
+.head span {
+  background-image: url(../img/barra-de-menus.png) !important;
 }
 .head a {
-  padding-right: 1.5vw;
+  color: azure;
 }
 .head a img {
   height: auto;
-  width: 11vw;
-  margin: 10px 10px;
+  width: 10vw;
+  margin: 10px;
 }
 .head .nav-list {
-  width: 40%;
+  width: auto;
+}
+.head .nav-list .list {
+  display: flex;
+  width: auto;
+}
+.head .nav-list .list li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+.head .nav-list .list li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: color, transform 0.3s;
+}
+.head .nav-list .list li a:hover {
+  transform: scale(1.1);
+  color: #f7e440;
+}
+.head .nav-list .list li a.active {
+  color: #f7e440;
 }
 
 /** End Header*/
@@ -57,22 +87,37 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.banner .fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: -1;
 }
 .banner p {
   color: azure;
   font-size: 22px;
   padding: 0px 150px;
   text-align: center;
+  position: relative;
+  z-index: 0;
 }
 
 .content-pag {
   background-color: #333;
   display: flex;
-  height: 450px;
+  height: auto;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .content-pag .info {
   display: flex;
@@ -86,32 +131,11 @@ body {
   width: 5vw;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 30px;
 }
 .content-pag .info p {
   text-align: center;
-}
-
-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  height: 20%;
-  background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
-  border-top: #ccc solid 1px;
-}
-footer img {
-  width: 20%;
-}
-footer .redes {
-  display: flex;
-  justify-content: center;
-}
-footer .redes img {
-  width: 20px;
-  margin: 12px;
-  margin-bottom: 20px;
+  width: 80%;
 }
 
 /** End Pag One */
@@ -228,6 +252,7 @@ main .contacto-info .datos {
   vertical-align: middle;
   align-content: center;
   padding-left: 2%;
+  color: azure;
 }
 main .contacto-info .datos .datos-empresa h1 {
   font-size: 40px;
@@ -242,10 +267,11 @@ main .contacto-info .datos .datos-redes img {
 }
 main .contacto-info .contacto {
   width: 35%;
-  height: 500px;
+  height: 600px;
   vertical-align: middle;
   align-content: center;
   padding-left: 2%;
+  margin-right: 5%;
 }
 main .contacto-info .contacto .nombre-apellido {
   width: 100%;
@@ -262,7 +288,7 @@ main .contacto-info .contacto .nombre-apellido .nombre input {
   margin-top: 5px;
 }
 main .contacto-info .contacto .nombre-apellido .apellido {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 main .contacto-info .contacto .nombre-apellido .apellido input {
   width: 100%;
@@ -300,9 +326,11 @@ main .contacto-info .contacto .boton {
   margin-top: 40px;
 }
 main .contacto-info .contacto .boton input {
-  padding: 5px;
-  border-radius: 8px;
-  width: 80px;
+  color: azure;
+  display: block;
+  margin-top: 20px;
+  width: 120px;
+  background-color: #2b51d2;
 }
 
 /** End Pag four */
@@ -313,6 +341,7 @@ header .historia-titulo {
   justify-content: center;
   margin: 40px auto;
   line-height: 20px;
+  color: azure;
 }
 header .historia-subtitulo {
   font-size: 18px;
@@ -358,5 +387,69 @@ main .historia-parte-3 .parte-3-contenido img {
 }
 
 /** End Pag five */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  background: linear-gradient(to bottom, #333 5%, #3e3e3e 10%, #ffffff 80%);
+  border-top: #ccc solid 1px;
+}
+footer img {
+  width: 20%;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+}
+footer .redes img {
+  width: 20px;
+  margin: 12px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .head a {
+    width: 20%;
+  }
+  .head a img {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .head .nav-list .list li {
+    list-style-type: none;
+    padding-left: 1.8rem;
+  }
+  /** End Header*/
+  /** Start Pag four */
+  main .contacto-info .datos {
+    align-content: flex-start;
+    padding-top: 25px;
+    color: azure;
+  }
+  main .contacto-info .datos .datos-empresa h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  main .contacto-info .datos .datos-redes img {
+    width: 30px;
+    margin: 10px;
+  }
+  main .contacto-info .contacto {
+    width: 50%;
+    height: 500px;
+    vertical-align: middle;
+    align-content: center;
+    padding-left: 2%;
+  }
+  main .contacto-info .contacto .nombre-apellido .apellido {
+    padding-right: 10px;
+  }
+  main .contacto-info .contacto .mensaje {
+    height: 150px;
+  }
+  /** End Pag four */
+}
 
 /*# sourceMappingURL=style.css.map */

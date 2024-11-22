@@ -1,0 +1,60 @@
+/** Start Pag five */
+
+
+header{
+    .historia-titulo{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+        line-height: 20px;
+        color: $fontColor;
+    }
+    .historia-subtitulo{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 20px;
+        padding: 0px 250px;
+        margin-bottom: 20px;
+
+    }
+}
+
+main{
+    .historia-parte-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border: solid 2px #434141;
+        }
+    }
+    .historia-parte-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            padding: 0 30px;
+        }
+        img{
+            border: solid 2px #434141;
+            margin: 20px;
+        }
+    }
+    .historia-parte-3{
+        display: flex;
+        margin-bottom: 30px;
+        .parte-3-contenido{
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            img{
+                border: solid 2px #434141;
+            }
+        }
+    }
+}
+
+/** End Pag five */
