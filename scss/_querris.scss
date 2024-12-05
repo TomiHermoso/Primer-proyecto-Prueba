@@ -1,4 +1,20 @@
 @media screen and (max-width:768px){
+ // Start Pag Two //
+
+    .content-pag2{
+        .info2{
+            flex-direction: column;
+        }
+        .infoReverse{
+            p{
+                order: 1;
+            }
+        }
+
+    }
+
+
+
     .head{
         button{
         }
@@ -28,70 +44,108 @@
 
     /** Start Pag four */
 
-main{
-    .contacto-info{
+    main{
+        .contacto-info{
+            flex-direction: column;
+            .datos{
+                align-content: flex-start;
+                padding-top: 25px;
+                color: $fontColor;
+                height: 400px;
+                .datos-empresa{
+                    h1{
+                        font-size: 40px;
+                        letter-spacing: 1px;
+                    }
+                    p{
 
-        .datos{
-            align-content: flex-start;
-            padding-top: 25px;
-            color: $fontColor;
-            .datos-empresa{
-                h1{
-                    font-size: 40px;
-                    letter-spacing: 1px;
+                    }
                 }
-                p{
-
+                .datos-redes{
+                    img{
+                        width: 30px;
+                        margin: 10px;
+                    }
                 }
             }
-            .datos-redes{
-                img{
-                    width: 30px;
-                    margin: 10px;
+            .contacto{
+                width: 70%;
+                height: 500px;
+                vertical-align: middle;
+                align-content: center;
+                padding-left: 2%;
+                .nombre-apellido{
+
+                    .nombre{
+
+                        input{
+
+                        }
+                    }
+                    .apellido{
+                        padding-right: 10px;
+                        input{
+
+                        }
+                    }
                 }
-            }
-        }
-        .contacto{
-            width: 50%;
-            height: 500px;
-            vertical-align: middle;
-            align-content: center;
-            padding-left: 2%;
-            .nombre-apellido{
-
-                .nombre{
-
+                .mail{
                     input{
 
                     }
                 }
-                .apellido{
-                    padding-right: 10px;
-                    input{
+                .mensaje{
+                    height: 150px;
+                    textarea {
 
                     }
                 }
-            }
-            .mail{
-                input{
+                .boton{
 
-                }
-            }
-            .mensaje{
-                height: 150px;
-                textarea {
+                    input{
 
-                }
-            }
-            .boton{
-
-                input{
-
+                    }
                 }
             }
         }
     }
-}
 
-/** End Pag four */
+    // Start Pag Five //
+
+    .historia-parte-2{
+        flex-direction: column;
+        .primerImg {
+            order:0 ;
+        
+        }
+        .primerTxt {
+            order: 1;
+            width: 50%;
+            text-align: center;
+        }
+        .segundaImg{
+            order: 2;
+        }
+        .segundoTxt{
+            order: 3;
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .historia-parte-3{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+        p{
+            width: 100%;
+            text-align: center;
+        }
+        .parte-3-contenido{
+            display: flex;
+            width: 220px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }

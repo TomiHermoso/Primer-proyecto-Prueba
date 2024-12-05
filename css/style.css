@@ -410,6 +410,12 @@ footer .redes img {
 }
 
 @media screen and (max-width: 768px) {
+  .content-pag2 .info2 {
+    flex-direction: column;
+  }
+  .content-pag2 .infoReverse p {
+    order: 1;
+  }
   .head a {
     width: 20%;
   }
@@ -423,10 +429,14 @@ footer .redes img {
   }
   /** End Header*/
   /** Start Pag four */
+  main .contacto-info {
+    flex-direction: column;
+  }
   main .contacto-info .datos {
     align-content: flex-start;
     padding-top: 25px;
     color: azure;
+    height: 400px;
   }
   main .contacto-info .datos .datos-empresa h1 {
     font-size: 40px;
@@ -437,7 +447,7 @@ footer .redes img {
     margin: 10px;
   }
   main .contacto-info .contacto {
-    width: 50%;
+    width: 70%;
     height: 500px;
     vertical-align: middle;
     align-content: center;
@@ -449,7 +459,40 @@ footer .redes img {
   main .contacto-info .contacto .mensaje {
     height: 150px;
   }
-  /** End Pag four */
+  .historia-parte-2 {
+    flex-direction: column;
+  }
+  .historia-parte-2 .primerImg {
+    order: 0;
+  }
+  .historia-parte-2 .primerTxt {
+    order: 1;
+    width: 50%;
+    text-align: center;
+  }
+  .historia-parte-2 .segundaImg {
+    order: 2;
+  }
+  .historia-parte-2 .segundoTxt {
+    order: 3;
+    width: 50%;
+    text-align: center;
+  }
+  .historia-parte-3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .historia-parte-3 p {
+    width: 100%;
+    text-align: center;
+  }
+  .historia-parte-3 .parte-3-contenido {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
